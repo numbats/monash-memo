@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<script src="template_files/libs/clipboard/clipboard.min.js"></script>
+<script src="template_files/libs/quarto-html/quarto.js"></script>
+<script src="template_files/libs/quarto-html/popper.min.js"></script>
+<script src="template_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="template_files/libs/quarto-html/anchor.min.js"></script>
+<link href="template_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="template_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="template_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="template_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="template_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><meta charset="utf-8"></head><body class="fullcontent">s
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="generator" content="pandoc">
+<meta name="viewport" content="width=device-width">
+<meta property="og:title" content="Monash Memo Template">
+
+
+
+
+<meta name="author" content="Marie Curie">
+
+<meta name="date" content="2022-10-22">
+
+<meta name="description" content="Monash Memo Template">
+
+<script id="pandoc-meta" type="application/json">
+{"link-citations":true,"toc-title":"Table of contents","by-author":[{"name":{"family":"Curie","literal":"Marie Curie","given":"Marie"},"metadata":{},"id":"1","number":"1"}],"quarto-version":"1.2.235","authors":[{"name":{"family":"Curie","literal":"Marie Curie","given":"Marie"},"metadata":{},"id":"1","number":"1"}],"document-css":false,"lang":"en","date":"October 22, 2022","biblio-config":true,"revealjs-plugins":[],"date-format":"long","author":["Marie Curie"],"include-after":["</main>\n<!-- /main column -->\n","<script id = \"quarto-html-after-body\" type=\"application/javascript\">\nwindow.document.addEventListener(\"DOMContentLoaded\", function (event) {\n  const toggleBodyColorMode = (bsSheetEl) => {\n    const mode = bsSheetEl.getAttribute(\"data-mode\");\n    const bodyEl = window.document.querySelector(\"body\");\n    if (mode === \"dark\") {\n      bodyEl.classList.add(\"quarto-dark\");\n      bodyEl.classList.remove(\"quarto-light\");\n    } else {\n      bodyEl.classList.add(\"quarto-light\");\n      bodyEl.classList.remove(\"quarto-dark\");\n    }\n  }\n  const toggleBodyColorPrimary = () => {\n    const bsSheetEl = window.document.querySelector(\"link#quarto-bootstrap\");\n    if (bsSheetEl) {\n      toggleBodyColorMode(bsSheetEl);\n    }\n  }\n  toggleBodyColorPrimary();  \n  const icon = \"\";\n  const anchorJS = new window.AnchorJS();\n  anchorJS.options = {\n    placement: 'right',\n    icon: icon\n  };\n  anchorJS.add('.anchored');\n  const clipboard = new window.ClipboardJS('.code-copy-button', {\n    target: function(trigger) {\n      return trigger.previousElementSibling;\n    }\n  });\n  clipboard.on('success', function(e) {\n    // button target\n    const button = e.trigger;\n    // don't keep focus\n    button.blur();\n    // flash \"checked\"\n    button.classList.add('code-copy-button-checked');\n    var currentTitle = button.getAttribute(\"title\");\n    button.setAttribute(\"title\", \"Copied!\");\n    let tooltip;\n    if (window.bootstrap) {\n      button.setAttribute(\"data-bs-toggle\", \"tooltip\");\n      button.setAttribute(\"data-bs-placement\", \"left\");\n      button.setAttribute(\"data-bs-title\", \"Copied!\");\n      tooltip = new bootstrap.Tooltip(button, \n        { trigger: \"manual\", \n          customClass: \"code-copy-button-tooltip\",\n          offset: [0, -8]});\n      tooltip.show();    \n    }\n    setTimeout(function() {\n      if (tooltip) {\n        tooltip.hide();\n        button.removeAttribute(\"data-bs-title\");\n        button.removeAttribute(\"data-bs-toggle\");\n        button.removeAttribute(\"data-bs-placement\");\n      }\n      button.setAttribute(\"title\", currentTitle);\n      button.classList.remove('code-copy-button-checked');\n    }, 1000);\n    // clear code selection\n    e.clearSelection();\n  });\n  function tippyHover(el, contentFn) {\n    const config = {\n      allowHTML: true,\n      content: contentFn,\n      maxWidth: 500,\n      delay: 100,\n      arrow: false,\n      appendTo: function(el) {\n          return el.parentElement;\n      },\n      interactive: true,\n      interactiveBorder: 10,\n      theme: 'quarto',\n      placement: 'bottom-start'\n    };\n    window.tippy(el, config); \n  }\n  const noterefs = window.document.querySelectorAll('a[role=\"doc-noteref\"]');\n  for (var i=0; i<noterefs.length; i++) {\n    const ref = noterefs[i];\n    tippyHover(ref, function() {\n      // use id or data attribute instead here\n      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');\n      try { href = new URL(href).hash; } catch {}\n      const id = href.replace(/^#\\/?/, \"\");\n      const note = window.document.getElementById(id);\n      return note.innerHTML;\n    });\n  }\n  const findCites = (el) => {\n    const parentEl = el.parentElement;\n    if (parentEl) {\n      const cites = parentEl.dataset.cites;\n      if (cites) {\n        return {\n          el,\n          cites: cites.split(' ')\n        };\n      } else {\n        return findCites(el.parentElement)\n      }\n    } else {\n      return undefined;\n    }\n  };\n  var bibliorefs = window.document.querySelectorAll('a[role=\"doc-biblioref\"]');\n  for (var i=0; i<bibliorefs.length; i++) {\n    const ref = bibliorefs[i];\n    const citeInfo = findCites(ref);\n    if (citeInfo) {\n      tippyHover(citeInfo.el, function() {\n        var popup = window.document.createElement('div');\n        citeInfo.cites.forEach(function(cite) {\n          var citeDiv = window.document.createElement('div');\n          citeDiv.classList.add('hanging-indent');\n          citeDiv.classList.add('csl-entry');\n          var biblioDiv = window.document.getElementById('ref-' + cite);\n          if (biblioDiv) {\n            citeDiv.innerHTML = biblioDiv.innerHTML;\n          }\n          popup.appendChild(citeDiv);\n        });\n        return popup.innerHTML;\n      });\n    }\n  }\n});\n</script>\n"," <!-- /content -->\n"],"labels":{"doi":"Doi","published":"Published","authors":"Author","modified":"Modified","affilations":"Affiliations","affiliation":"Affiliations","abstract":"Abstract","description":"Description"},"header-includes":[],"include-before":["<div id="\&quot;quarto-content\&quot;" class="\&quot;page-columns" page-rows-contents="" page-layout-article\"="">\n<div id="\&quot;quarto-margin-sidebar\&quot;" class="\&quot;sidebar" margin-sidebar\"="">\n</div>\n<main class="\&quot;content\&quot;" id="\&quot;quarto-document-content\&quot;">\n"],"title":"Monash Memo Template","quarto-template-params":{"title-block-categories":"true"},"branding":true,"fig-responsive":true}
+
+
+<title>Monash Memo Template</title>
+
+
+
+
+
+
+
+
+<script src="paged.polyfill.js"></script>
+<link href="interface.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div class="running-h1-title"></div>
+
+<div class="running-h2-title"></div>
+
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<div class="front-page">
+<div id="header" class="title-page">
+<h1 class="title">Monash Memo Template</h1>
+<h2 class="author anchored">Marie Curie</h2>
+<h2 class="date anchored">October 22, 2022</h2>
+</div>
+</div>
+
+<div class="front-matter-container">
+</div>
+
+<div class="main">
+<p>Test</p>
+</div>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+<script>
+// when the page is about to reload via servr, remember the scroll position
+document.addEventListener('servr:reload', function(e) {
+  sessionStorage.setItem('pagedown-scroll', window.scrollY);
+});
+</script>
+
+</main></div></body></html>
