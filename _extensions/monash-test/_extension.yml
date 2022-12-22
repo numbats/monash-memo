@@ -1,0 +1,11 @@
+title: Monash Memo Template
+authors: 
+ - Emi Tanaka
+ - Rob J Hyndman
+version: 1.0.0
+quarto-required: ">=1.2.0"
+contributes:
+  formats:
+    html: default
+      
+

@@ -1,8 +1,9 @@
 ---
 title: Monash Memo Template
 format:
+  monash-test-html: default
   #monash-memo-html: default
-  monash-memo-pdf: default
+  #monash-memo-pdf: default
 author: Marie Curie
 date: last-modified
 branding: true
